@@ -88,3 +88,68 @@ console.log('1' === 1); //false
 
 //приоретет операторов
 //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
+//условия
+// if(2*4 == 8) {
+//     console.log('верно!');
+// } else {
+//     console.log('не верно!');
+// }
+
+
+let num = 50;
+
+if (num < 49) {
+    console.log('неверно');
+} else if (num > 100) {
+    console.log('Слишком много');
+} else {
+    console.log('верно!');
+}
+
+// тоже через тернарные операторы
+(num == 50) ? console.log('верно') : console.log('неверно');
+
+//switch
+switch (num) {
+    case num < 49:
+        console.log('неверно');
+        break;
+    case num > 100:
+        console.log('очень много');
+        break;
+    case num > 80:
+        console.log('Всё ещё много');
+        break; 
+    case 50:
+        console.log('верно!');
+        break;
+    default:
+        console.log('что-то пошло не так...');
+        break;
+}
+
+//циклы 
+
+let num2 = 50;
+
+// while (num2 < 55) {
+//     console.log(num2);
+//     num2++;
+// }
+
+do {
+    console.log(num2);
+    num2++;
+}
+
+while (num2 < 55);
+
+for (let i = 1; i < 8; i++) {
+    if (i == 6) {
+        // break; //до 6 не включая 6
+        continue; //до 7 не включая 6
+    }
+    console.log(i);
+}
